@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Klaire Sobrepena">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klaire Sobrepena</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1> hi, i'm klaire sobrepena </h1>
+    <h2> software engineer studying data science & psychology
+        @ UC Berkeley
+    </h2>
+    <br>
+    <br>
+    <h3> WHO AM I?</h3>
+    <div class="paragraph_talk">
+    <img src="self_image.JPG" style="max-height:300px; float: left;">
+    <h2>about me.</h2>
+    <p> as an aspiring software engineer with a love for design, i am passionate about exploring the 
+        capabilities of AI to develop innovative solutions that make a real impact. with a creative and
+     out-of-the-box mindset, i am always eager to learn and stay up-to-date with the latest advancements in technology.
+      i am dedicated to developing efficient and elegant code and excited to collaborate with like-minded professionals to 
+      make a meaningful contribution to the world of software engineering.</p>
+</div>
+<br>
+<br>
+<h3>WORKS.</h3>  
+<div class="paragraph_talk">
+    <h2>past projects.</h2>
+</div>
+    <div class="projects"> 
+        <div class="projects-item"></div><img src="Multiplayer.png" style="max-height: 350px; float: left"></div>
+        <div class="projects-item"></div><img src="Computer.png" style="max-height: 350px;"></div>
+        <div class="projects-item"></div><img src="Covid-19.png" style="max-height: 350px;"></div>
+    </div>
+    <br>
+<a href="project.html" target="_blank"><button> learn more about my projects! </button></a>
+<br>
+<br>
+<h3>REACH OUT!</h3>
+<div class="paragraph_talk">
+    <h2>contact me.</h2>
+    <img src="instagram.png" style="max-height:100px; float: left;">
+    <br>
+   <h4>@klxire</h4>
+   <img src="github.png" style="max-height:100px; float: left;">
+   <br>
+   <h4>kklairee</h4>
+   <h2>leave your email for updates!</h2>
+   <br>
+   <br>
+   <form>
+    <input type="text" placeholder="Email Address">
+    <br>
+    <br>
+    <input type="text" placeholder="Leave your message!">
+    <br>
+    <br>
+    <input type="submit" value="Submit">
+   </form>
+   <br>
+   <br>
+   <h3> Random Quote of the Day</h3>
+   <p>Click the button below to generate a random quote!</p>
+    <blockquote id="quote"></blockquote>
+    <button onclick="generateQuote()">Generate Quote</button>
+    <script>
+      var quotes = [
+        "The best way to predict the future is to invent it. - Alan Kay",
+        "Believe you can and you're halfway there. - Theodore Roosevelt",
+        "Quality is not an act, it is a habit. - Aristotle",
+        "It does not matter how slowly you go as long as you do not stop. - Confucius",
+        "Success is not final, failure is not fatal: it is the courage to continue that counts. - Winston Churchill",
+        "Love yourself. - Justin Bieber",
+        "Life is too short to stress about the little things. - Nicolas Perez"
+      ];
+
+      function generateQuote() {
+        var randomIndex = Math.floor(Math.random() * quotes.length);
+        document.getElementById('quote').innerHTML = quotes[randomIndex];
+      }
+    </script>
+  </body>
+</html>
+
+
+
+
+</body>
+</html>
